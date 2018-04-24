@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.toyota.carservice.model.Part" table="PART"
+		schema="APP" optimistic-lock="version">
+		<id name="partId" type="java.lang.Integer">
+			<column name="PART_ID" />
+			<generator class="assigned" />
+		</id>
+		<many-to-one name="car" class="com.toyota.carservice.model.Car"
+			column="CAR_ID" not-null="true" />
+		<property name="partNumber" type="string">
+			<column name="PART_NUMBER" length="50" />
+		</property>
+		<property name="partName" type="string">
+			<column name="PART_NAME" length="50" />
+		</property>
+		<one-to-one cascade="delete" name="service" class="com.toyota.carservice.model.Service"/>
+	</class>
+</hibernate-mapping>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="327.0" prefWidth="493.0" style="-fx-background-color: #2b579a;" styleClass="page1" stylesheets="@../css/login.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.toyota.carservice.controller.SwitchController">
+   <children>
+      <AnchorPane layoutX="97.0" layoutY="25.0" prefHeight="327.0" prefWidth="493.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Button fx:id="btnInformasiService" contentDisplay="TOP" layoutX="271.0" layoutY="74.0" mnemonicParsing="false" onAction="#aksiInformasiService" prefHeight="160.0" prefWidth="150.0" text="Informasi Service Mobil" textAlignment="CENTER" wrapText="true">
+               <graphic>
+                  <ImageView fitHeight="57.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/vehicle18.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Label fx:id="lblClose" layoutX="472.0" layoutY="5.0" text="X" textFill="WHITE">
+               <font>
+                  <Font name="Arial Black" size="15.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnKelolaData" contentDisplay="TOP" layoutX="54.0" layoutY="74.0" mnemonicParsing="false" onAction="#aksiKelolaData" prefHeight="160.0" prefWidth="150.0" text="Data Service" textAlignment="CENTER" wrapText="true">
+               <graphic>
+                  <ImageView fitHeight="76.0" fitWidth="84.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/Data%20Configuration.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

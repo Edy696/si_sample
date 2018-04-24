@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="anchorCar" prefHeight="970.0" prefWidth="1225.0" style="-fx-background-color: white;" stylesheets="@../css/Metro-UI.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.toyota.carservice.controller.CarServiceController">
+   <children>
+      <ProgressBar fx:id="barCar" layoutX="3.0" layoutY="51.0" prefHeight="15.0" prefWidth="1212.0" progress="0.0" />
+      <Label layoutX="14.0" layoutY="14.0" text="Mobil" textFill="#2b579a">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="imgLoadCar" fitHeight="43.0" fitWidth="40.0" layoutX="108.0" layoutY="14.0" opacity="0.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/progress_ring.gif" />
+         </image>
+      </ImageView>
+      <AnchorPane id="paneCar" fx:id="paneCar" layoutX="3.0" layoutY="66.0" prefHeight="162.0" prefWidth="1212.0">
+         <children>
+            <Label fx:id="lblCarId" layoutX="271.0" layoutY="14.0" opacity="0.0" text="-1" />
+            <Text layoutX="9.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Foto" />
+            <ImageView fx:id="imageCar" fitHeight="109.0" fitWidth="200.0" layoutX="98.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true" />
+            <Label fx:id="lblLocationImage" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="39.0" layoutY="147.0" prefHeight="15.0" prefWidth="153.0" text=". . . . ." textAlignment="RIGHT" />
+            <Button fx:id="btnBrowseImage" layoutX="324.0" layoutY="136.0" mnemonicParsing="false" onAction="#btnBrowseImageOnClick" prefHeight="25.0" prefWidth="94.0" styleClass="btn" text="Cari" />
+            <Label layoutX="9.0" layoutY="14.0" text="Nama" />
+            <TextField fx:id="txtCarName" layoutX="92.0" layoutY="8.0" prefHeight="25.0" prefWidth="200.0" />
+         </children>
+      </AnchorPane>
+      <Label layoutX="14.0" layoutY="243.0" text="Part" textFill="#2b579a">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </Label>
+      <AnchorPane fx:id="panePart" layoutY="303.0">
+         <children>
+            <TextField fx:id="txtPartName" layoutX="101.0" layoutY="32.0" prefHeight="27.0" prefWidth="200.0" />
+            <Label layoutX="16.0" layoutY="38.0" text="Nama Part" />
+            <TextField fx:id="txtPrice" layoutX="102.0" layoutY="64.0" prefHeight="27.0" prefWidth="200.0" />
+            <Label layoutX="16.0" layoutY="70.0" text="Harga" />
+            <TableView fx:id="tablePart" editable="true" layoutX="14.0" layoutY="96.0" prefHeight="272.0" prefWidth="770.0">
+              <columns>
+                  <TableColumn fx:id="CarColumn" prefWidth="150.0" text="Car" visible="false" />
+                  <TableColumn fx:id="PartIdColumn" prefWidth="150.0" text="Part Id" visible="false" />
+                <TableColumn fx:id="PartNumberColumn" prefWidth="150.0" text="Nomor Part" />
+                <TableColumn fx:id="PartNameColumn" prefWidth="150.0" text="Nama" />
+                  <TableColumn fx:id="PriceColumn" prefWidth="150.0" text="Harga" />
+                  <TableColumn fx:id="PartActionColumn" prefWidth="150.0" text="Aksi" />
+              </columns>
+            </TableView>
+            <Button fx:id="btnSavePart" layoutX="328.0" mnemonicParsing="false" onAction="#btnSavePartOnClick" styleClass="btn" text="Tambah" />
+            <TextField fx:id="txtPartNumber" layoutX="102.0" prefWidth="200.0" />
+            <Label layoutX="16.0" layoutY="6.0" text="Nomor Part" />
+         </children>
+         <padding>
+            <Insets bottom="10.0" top="5.0" />
+         </padding>
+      </AnchorPane>
+      <Label layoutX="14.0" layoutY="672.0" text="Service" textFill="#2b579a">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </Label>
+      <AnchorPane fx:id="paneService" layoutX="3.0" layoutY="730.0" prefHeight="319.0" prefWidth="798.0">
+         <children>
+            <Label layoutX="14.0" layoutY="70.0" text="Qty" />
+            <Region layoutX="38.0" layoutY="64.0" prefHeight="27.0" prefWidth="66.0" />
+            <TextField fx:id="txtQty" layoutX="104.0" layoutY="64.0" prefHeight="27.0" prefWidth="200.0" />
+            <Label layoutX="14.0" layoutY="6.0" text="Nama" />
+            <Region layoutX="53.0" prefHeight="27.0" prefWidth="51.0" />
+            <TextField fx:id="txtServiceName" layoutX="104.0" prefWidth="200.0" />
+            <Region layoutX="304.0" prefHeight="25.0" prefWidth="26.0" />
+            <Button fx:id="btnSaveService" layoutX="330.0" layoutY="1.0" mnemonicParsing="false" onAction="#btnSaveServiceOnClick" styleClass="btn" text="Tambah" />
+            <ComboBox fx:id="cmbPart" layoutX="104.0" layoutY="32.0" prefHeight="27.0" prefWidth="200.0" />
+            <Label layoutX="14.0" layoutY="37.0" text="Part" />
+            <Region layoutX="41.0" layoutY="32.0" prefHeight="27.0" prefWidth="63.0" />
+            <TableView fx:id="tableService" editable="true" layoutX="7.0" layoutY="157.0" prefHeight="205.0" prefWidth="784.0">
+               <columns>
+                  <TableColumn fx:id="ServiceId" prefWidth="150.0" text="Service Id" visible="false" />
+                  <TableColumn fx:id="NameServiceColumn" prefWidth="121.0" text="Nama" />
+                  <TableColumn fx:id="PartServiceColumn" prefWidth="165.0" text="Item" />
+                  <TableColumn fx:id="QtyColumn" prefWidth="79.0" text="Qty" />
+                  <TableColumn fx:id="PeriodeColumn" prefWidth="183.0" text="Periode" />
+                  <TableColumn fx:id="ServiceActionColumn" prefWidth="107.0" text="Aksi" />
+               </columns>
+            </TableView>
+            <Label layoutX="14.0" layoutY="108.0" text="Periode" />
+            <AnchorPane fx:id="anchorPeriode" layoutX="104.0" layoutY="102.0" prefHeight="25.0" prefWidth="200.0" />
+         </children>
+         <padding>
+            <Insets top="5.0" />
+         </padding>
+      </AnchorPane>
+      <ImageView fx:id="imgLoadService" fitHeight="43.0" fitWidth="40.0" layoutX="144.0" layoutY="674.0" opacity="0.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/progress_ring.gif" />
+         </image>
+      </ImageView>
+      <ProgressBar fx:id="barPart" layoutX="3.0" layoutY="280.0" prefHeight="15.0" prefWidth="1219.0" progress="0.0" />
+      <ProgressBar fx:id="barService" layoutY="708.0" prefHeight="15.0" prefWidth="1219.0" progress="0.0" />
+      <ImageView fx:id="imgLoadPart" fitHeight="43.0" fitWidth="40.0" layoutX="118.0" layoutY="253.0" opacity="0.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/progress_ring.gif" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnSaveCar" layoutX="1024.0" layoutY="23.0" mnemonicParsing="false" onAction="#btnSaveCarOnClick" styleClass="btn" text="Simpan" />
+      <Button fx:id="btnDeleteCar" layoutX="1129.0" layoutY="23.0" mnemonicParsing="false" onAction="#btnDeleteCarOnClick" styleClass="btn" text="Hapus" />
+      <Button fx:id="btnCancel" layoutX="929.0" layoutY="23.0" mnemonicParsing="false" onAction="#btnCancelOnClick" styleClass="btn" text="Batal" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+
+<AnchorPane fx:id="paneData" prefHeight="900.0" prefWidth="1300.0" style="-fx-background-color: white;" stylesheets="@../css/Metro-UI.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.toyota.carservice.controller.CarMenuController">
+   <children>
+      <ImageView fitHeight="41.0" fitWidth="44.0" layoutX="5.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../img/progress_ring.gif" />
+         </image>
+      </ImageView>
+      <ProgressBar layoutY="3.0" prefHeight="15.0" prefWidth="985.0" progress="0.0" />
+      <AnchorPane fx:id="paneMenu" layoutX="25.0" layoutY="23.0" prefHeight="832.0" prefWidth="1223.0" AnchorPane.bottomAnchor="45.0" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="52.0" AnchorPane.topAnchor="23.0" />
+   </children>
+</AnchorPane>

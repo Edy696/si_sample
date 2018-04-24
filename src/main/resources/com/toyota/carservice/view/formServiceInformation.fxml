@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" style="-fx-background-color: white;" stylesheets="@../css/Metro-UI.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.toyota.carservice.controller.PlayInformationController">
+   <children>
+      <HBox layoutX="891.0" layoutY="1.0" stylesheets="@../css/winDec.css" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Button fx:id="fullscreen" mnemonicParsing="false" onAction="#aksifullscreen" pickOnBounds="true" prefHeight="30.0" prefWidth="34.0" style="" styleClass="decoration-button-fullscreen" text="" AnchorPane.rightAnchor="102.0" AnchorPane.topAnchor="0.0" />
+            <Button fx:id="minimize" mnemonicParsing="false" onAction="#aksiminimize" pickOnBounds="true" prefHeight="30.0" prefWidth="34.0" style="" styleClass="decoration-button-minimize" text="" AnchorPane.rightAnchor="68.0" AnchorPane.topAnchor="0.0" />
+            <Button fx:id="maximize" mnemonicParsing="false" onAction="#aksiMaximized" pickOnBounds="true" prefHeight="30.0" prefWidth="34.0" styleClass="decoration-button-maximize" text="" AnchorPane.rightAnchor="34.0" AnchorPane.topAnchor="0.0" />
+            <Button fx:id="close" mnemonicParsing="false" onAction="#aksiClose" pickOnBounds="true" prefHeight="30.0" prefWidth="34.0" styleClass="decoration-button-close" text="" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <rotationAxis>
+                  <Point3D />
+               </rotationAxis>
+            </Button>
+         </children>
+      </HBox>
+      <Button fx:id="resize" layoutX="1015.0" layoutY="601.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" mouseTransparent="true" onAction="#aksiResize" pickOnBounds="true" prefHeight="10.0" prefWidth="10.0" styleClass="decoration-button-resize" stylesheets="@../css/winDec.css" text="" AnchorPane.bottomAnchor="2.0" AnchorPane.rightAnchor="2.0" />
+      <AnchorPane layoutX="1.0" layoutY="100.0" prefHeight="329.0" prefWidth="801.0" AnchorPane.bottomAnchor="51.0" AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="398.0" AnchorPane.topAnchor="100.0">
+         <children>
+            <ScrollPane fx:id="scrollPane" layoutX="40.0" layoutY="27.0" prefHeight="329.0" prefWidth="801.0" style="-fx-background-color: white;" stylesheets="@../css/buttonCircle.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+            <VBox prefHeight="649.0" prefWidth="801.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <HBox alignment="CENTER_LEFT" prefHeight="96.0" prefWidth="799.0">
+                     <children>
+                        <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../../../Screen%20Shoot/agya.png" />
+                           </image></ImageView>
+                        <Text fill="#2b579a" strokeType="OUTSIDE" strokeWidth="0.0" text="Agya">
+                           <font>
+                              <Font size="36.0" />
+                           </font></Text>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../../../Screen%20Shoot/fortuner.png" />
+                           </image></ImageView>
+                        <Text fill="#2b579a" strokeType="OUTSIDE" strokeWidth="0.0" text="Fortuner">
+                           <font>
+                              <Font size="36.0" />
+                           </font></Text>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../../../Screen%20Shoot/Innova.png" />
+                           </image></ImageView>
+                        <Text fill="#2b579a" strokeType="OUTSIDE" strokeWidth="0.0" text="Innova">
+                           <font>
+                              <Font size="36.0" />
+                           </font></Text>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../../../Screen%20Shoot/rush.png" />
+                           </image></ImageView>
+                        <Text fill="#2b579a" strokeType="OUTSIDE" strokeWidth="0.0" text="Rush">
+                           <font>
+                              <Font size="36.0" />
+                           </font></Text>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../../../Screen%20Shoot/vios.png" />
+                           </image>
+                        </ImageView>
+                        <Text fill="#2b579a" strokeType="OUTSIDE" strokeWidth="0.0" text="Vios">
+                           <font>
+                              <Font size="36.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="678.0" layoutY="105.0" prefHeight="649.0" prefWidth="523.0" style="-fx-background-color: #2b579a;" AnchorPane.bottomAnchor="46.0" AnchorPane.leftAnchor="678.0" AnchorPane.rightAnchor="-1.0" AnchorPane.topAnchor="105.0">
+         <children>
+            <Button fx:id="btnLogout" layoutX="26.0" layoutY="32.0" mnemonicParsing="false" onAction="#aksiLogout" prefHeight="40.0" prefWidth="40.0" stylesheets="@../css/buttonCircle.css" />
+            <ScrollPane layoutY="46.0" prefHeight="649.0" prefViewportHeight="750.0" prefViewportWidth="229.0" prefWidth="541.0" style="-fx-background-color: #2b579a;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <content>
+                  <VBox prefHeight="750.0" prefWidth="509.0" spacing="20.0" style="-fx-background-color: #2b579a;">
+                     <children>
+                        <HBox layoutX="10.0" layoutY="10.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/Speedometer.png" />
+                                 </image></ImageView>
+                              <Text fill="#ff8383" strokeType="OUTSIDE" strokeWidth="0.0" text="10.000 KM" />
+                              <AnchorPane prefHeight="100.0" prefWidth="336.0">
+                                 <children>
+                                    <Button layoutX="260.0" layoutY="38.0" mnemonicParsing="false" styleClass="btn" text="Cek" />
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </HBox>
+                        <HBox>
+                           <children>
+                              <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/Speedometer.png" />
+                                 </image></ImageView>
+                              <Text fill="#ff8383" strokeType="OUTSIDE" strokeWidth="0.0" text="20.000 KM" />
+                              <AnchorPane prefHeight="100.0" prefWidth="336.0">
+                                 <children>
+                                    <Button layoutX="260.0" layoutY="38.0" mnemonicParsing="false" styleClass="btn" text="Cek" />
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </HBox>
+                        <HBox>
+                           <children>
+                              <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/Speedometer.png" />
+                                 </image></ImageView>
+                              <Text fill="#ff8383" strokeType="OUTSIDE" strokeWidth="0.0" text="30.000 KM" />
+                              <AnchorPane prefHeight="100.0" prefWidth="336.0">
+                                 <children>
+                                    <Button layoutX="260.0" layoutY="38.0" mnemonicParsing="false" styleClass="btn" text="Cek" />
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </HBox>
+                        <HBox>
+                           <children>
+                              <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/Speedometer.png" />
+                                 </image></ImageView>
+                              <Text fill="#ff8383" strokeType="OUTSIDE" strokeWidth="0.0" text="40.000 KM" />
+                              <AnchorPane prefHeight="100.0" prefWidth="336.0">
+                                 <children>
+                                    <Button layoutX="260.0" layoutY="38.0" mnemonicParsing="false" styleClass="btn" text="Cek" />
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </HBox>
+                        <HBox>
+                           <children>
+                              <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/Speedometer.png" />
+                                 </image></ImageView>
+                              <Text fill="#ff8383" strokeType="OUTSIDE" strokeWidth="0.0" text="50.000 KM" />
+                              <AnchorPane prefHeight="100.0" prefWidth="336.0">
+                                 <children>
+                                    <Button layoutX="260.0" layoutY="38.0" mnemonicParsing="false" styleClass="btn" text="Cek" />
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </content>
+            </ScrollPane>
+         </children>
+      </AnchorPane>
+      <Label id="TitleLabel" fx:id="title" alignment="CENTER" layoutX="2.0" layoutY="-3.0" mouseTransparent="true" prefHeight="38.0" prefWidth="738.0" text="Informasi Service Mobil" textFill="#a1a1a1" AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="-1.0">
+         <font>
+            <Font name="Segoe UI Semibold" size="14.0" />
+         </font>
+      </Label>
+      <TextField layoutX="1.0" layoutY="67.0" prefHeight="30.0" prefWidth="648.0" promptText="Ketik nama mobil untuk pencarian" />
+   </children>
+</AnchorPane>
